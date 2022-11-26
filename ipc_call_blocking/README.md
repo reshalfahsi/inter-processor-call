@@ -1,4 +1,4 @@
-# Inter-Processor Call: ipc_call_blocking
+# Inter-Processor Call: ``ipc_call_blocking``
 
 Example of `ipc_call_blocking` use case. By using multicore capability of ESP32, first 15 seconds Protocol CPU and Application CPU will print `Assalamualaikum World!` on the serial monitor. After that Application CPU start blinking the built-in LED of ESP32 and stop sending the aforementioned message. There are two FreeRTOS tasks which are sending the message in Protocol CPU and blinking the LED in Application CPU. The `ipc_call_blocking` in Application CPU performs the sending of `Assalamualaikum World!` message. In contrast to `ipc_call`, this case doesn't require [Semaphores](https://www.freertos.org/Embedded-RTOS-Binary-Semaphores.html).
 
