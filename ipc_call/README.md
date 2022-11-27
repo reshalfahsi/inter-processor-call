@@ -21,7 +21,7 @@ make monitor
 
 To close the serial monitor in your terminal:
 
-> CTRL + T + X
+> Ctrl + T + X
 
 ## Note
 
